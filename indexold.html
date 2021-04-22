@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+  <meta name="renderer" content="webkit" />
+  <meta name="force-rendering" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <!-- MDUI CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/css/mdui.min.css"
+    integrity="sha384-2PJ2u4NYg6jCNNpv3i1hK9AoAqODy6CdiC+gYiL2DVx+ku5wzJMFNdE3RoWfBIRP" crossorigin="anonymous" />
+  <title>Hello, world!</title>
+</head>
+<style>
+  .bgimg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    z-index: -10;
+    zoom: 1;
+    background-color: #fff;
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+  }
+
+  .dialog {
+    width: 100%;
+  }
+</style>
+
+<body class="mdui-theme-primary-indigo mdui-theme-accent-blue">
+  <div class="mdui-appbar">
+    <div class="mdui-toolbar mdui-color-theme">
+      <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer'}"><i
+          class="mdui-icon material-icons">menu</i></a>
+      <a href="javascript:;" class="mdui-typo-headline">精神小伙成双队</a>
+      <a href="javascript:;" class="mdui-typo-title">Team 102</a>
+      <div class="mdui-toolbar-spacer"></div>
+      <audio loop controls>
+        <source src="./bgm.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+  </div>
+  <div class="bgimg"></div>
+  <div class="mdui-typo mdui-text-color-white">
+    <center>
+      <div class="mdui-typo-display-3">欢迎来到精神小伙成双队的网站</div>
+      <div class="mdui-typo-display-1">灵感满满，创造奇迹</div>
+      <div class="mdui-typo-display-2">简洁 · 时尚 · 美观</div>
+      <button class="mdui-fab mdui-color-theme-accent mdui-ripple" mdui-drawer="{target: '#left-drawer'}"><i
+          class="mdui-icon material-icons">arrow_forward</i></button>
+      <div class="dialog mdui-color-pink">
+        <h1>我们是谁？</h1>
+      </div>
+      <div class="dialog mdui-color-blue-900">
+        <h1>成员职责</h1>
+        <h2>职责介绍</h2>
+        <ul>
+          <li>组长（凌祺雯）：组织团队讨论探究，拟定探究计划，组建交流模式，领取资源、任务单，反馈探究进度</li>
+          <li>副组长（段傅瑶）：协助组长发起探究活动，调节团队成员分工，记载活动情况，上传任务单评价标等学习报告</li>
+          <li>组员（钱炳皓、刘书阳、吴子豪、龚辰烨）：资源收集与整理，草拟设计构思方案与提议，协助团队任务需要</li>
+        </ul>
+      </div>
+      <div class="dialog mdui-color-purple">
+        <h1>联系我们</h1>
+        <p>组长哔哩哔哩：<a href=""></a></p>
+      </div>
+    </center>
+    <div class="mdui-drawer mdui-drawer-close mdui-color-white" id="left-drawer">
+      <ul class="mdui-list">
+  <li class="mdui-list-item mdui-ripple" onclick="window.location.href='./index.html'">主页</li>
+  <li class="mdui-list-item mdui-ripple" onclick="window.location.href='./project/'">作品</li>
+  <li class="mdui-list-item mdui-ripple" onclick="window.location.href='./blog'">团队blog</li>
+</ul>
+    </div>
+    <!-- MDUI JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.0/dist/js/mdui.min.js"
+      integrity="sha384-aB8rnkAu/GBsQ1q6dwTySnlrrbhqDwrDnpVHR2Wgm8pWLbwUnzDcIROX3VvCbaK+"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
